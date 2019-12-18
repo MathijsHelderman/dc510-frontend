@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, Text, View } from 'react-native';
 import { withNavigation } from 'react-navigation';
 
 class HomeScreen extends React.Component {
@@ -11,6 +11,7 @@ class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Home screen</Text>
+        <Button title="Logout" onPress={this.logout} />
       </View>
     );
   }
